@@ -7,16 +7,20 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "start": "pm2 start ./server/server.js",
-    "devStart": "nodemon ./server/server.js"
+    "start": "node ./server/server.js",
+    "start2": "pm2 start ./server/server.js",
+    "devStart": "nodemon ./server/server.js",
+    "stress": "artillery run stress.yml"
   },
   "dependencies": {
+    "artillery": "^1.6.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.9.6",
     "nodemon": "^2.0.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git"
