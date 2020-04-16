@@ -9,15 +9,12 @@
   "scripts": {
     "start": "node ./server/server.js",
     "start2": "pm2 start ./server/server.js",
-    "devStart": "nodemon ./server/server.js",
-    "stress": "artillery run stress.yml"
+    "devStart": "nodemon ./server/server.js"
   },
   "dependencies": {
-    "artillery": "^1.6.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^5.9.6",
-    "nodemon": "^2.0.2",
+    "newrelic": "^6.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "request": "^2.88.2"
